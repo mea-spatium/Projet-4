@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>  
+<head>
+<script>
+function myFunction() {
+  document.getElementByClass("autour").style.backgroundColor = "#121212";
+  document.body.style.background = "linear-gradient(45deg, #de9900, #000000)";
+  document.getElementById("boubou").innerHTML = "Clair";
+  document.getElementByClass("sommaire").style.Color = "#de9900";
+  document.getElementById("aaa").style.background = "url('https://image.noelshack.com/fichiers/2019/06/7/1549803630-2019-02-10.png')";
+  document.getElementById("aaa:hover").style.background = "url('https://image.noelshack.com/fichiers/2019/06/7/1549803632-2019-02-10-1.png')";
+}
+var lien = "url('https://image.noelshack.com/fichiers/2019/05/6/1549096092-2019-02-02.png')";
+var lien2 = "url('https://image.noelshack.com/fichiers/2019/05/6/1549140153-2019-02-02-2.png')";
+</script>
+<style>
+body {
+  background: #a64bf4;
+  background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+.sommaire {
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 39px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 44px;
+}
+
+#aaa {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    background: url(https://image.noelshack.com/fichiers/2019/05/6/1549096092-2019-02-02.png);
+    border-radius: 20px;
+}
+#aaa:hover {
+    background: url(https://image.noelshack.com/fichiers/2019/05/6/1549140153-2019-02-02-2.png);
+}
+</style>
+</head>
+<body>
+<div class="autour" style="width: 500px;
+    height: -webkit-fill-available;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 42px 55px 45px 55px;
+    align-content: center;
+    margin: auto;
+    background-color: white;">
+<button type="button" 
+onclick="document.body.style.background = 'linear-gradient(45deg, #de9900, #000000)';
+document.getElementById('boubou').innerHTML = 'Clair';
+document.getElementByClass('sommaire').style.Color = '#de9900';
+document.getElementById('aaa').style.background = lien;
+document.getElementById('aaa:hover').style.background = lien2;
+document.getElementByClass('autour').style.backgroundColor = '#121212';
+element.getElementByClass('autour').style.background = '#121212';" id="boubou">Sombre</button>
+
+  <span class="sommaire">Sommaire</span>
+  <a href="http://www.mea-spatium.com/park/ticket2.php" id="aaa"> Ticket </a><br>
+  <a href="http://www.mea-spatium.com/park/tktester.html" id="aaa"> TK Tester </a><br>
+  <a href="http://www.mea-spatium.com/park/tktester-get.html" id="aaa"> TK Tester GET </a><br>
+  <a href="http://www.mea-spatium.com/park/horaire.html" id="aaa"> Horaire </a><br>
+  <a href="http://www.mea-spatium.com/park/forfait.html" id="aaa"> Forfait </a><br>
+  <a href="http://www.mea-spatium.com/park/abonnements.php" id="aaa"> Abonnements </a><br>
+  <a href="http://www.mea-spatium.com/park/tableau.html" id="aaa"> Tableau </a>
+</div>
+</body>
+</html>
